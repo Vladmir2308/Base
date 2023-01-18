@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html>
+    
+<head>
+    <title>Base</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+</head>
+    
+<body>
+<svg style="display: none;">
+    <symbol id="logo" viewBox="0 0 42 42">
+        <g>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M41.9995 21.0966L41.9998 21C41.9998 9.40202 32.5977 0 20.9998 0C10.1754 0 1.26384 8.18954 0.12312 18.7105L11.7897 24.4142C12.3614 23.6184 13.2951 23.1 14.3498 23.1C15.2425 23.1 16.0485 23.4714 16.6217 24.068L25.9 16.4134C25.9196 14.6906 27.3223 13.3 29.0498 13.3C30.6569 13.3 31.983 14.5037 32.1757 16.0587L41.9995 21.0966ZM17.4855 25.9482L26.5992 18.4294C27.1767 19.1434 28.0599 19.6 29.0498 19.6C30.191 19.6 31.1904 18.9931 31.7431 18.0845L41.8773 23.2815C40.7402 33.8063 31.8268 42 20.9998 42C9.40178 42 -0.000244141 32.598 -0.000244141 21C-0.000244141 20.9588 -0.00012575 20.9177 0.000110711 20.8766L11.2014 26.3528C11.2557 28.0449 12.6445 29.4 14.3498 29.4C16.0895 29.4 17.4998 27.9897 17.4998 26.25C17.4998 26.1482 17.4949 26.0475 17.4855 25.9482Z" fill="white"/>
+         </g>
+    </symbol>
+</svg>
+
+<!-- Intro -->
+<div class="intro" id="intro">
+    <img class="intro__img" src="img/intro/computer.png" alt="#">
+   
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <svg class="logo__icon">
+                        <use xlink:href="#logo"></use>
+                    </svg>
+                    
+                    <div class="logo__text">Base</div>
+                </div>
+                    
+                <nav class="nav">
+                    <a class="nav__link active" href="#" data-scroll="#intro
+                    ">Home</a>
+                    <a class="nav__link" href="#" data-scroll="#features">Features</a>
+                    <a class="nav__link" href="#" data-scroll="#testimonial">Testimonial</a>
+                    <a class="nav__link" href="#" data-scroll="#pricing">Pricing</a>
+                    <a class="nav__link" href="#" data-scroll="#cta">CTA</a>
+                </nav>
+
+                <a class="btn" href="#">Try demo</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="intro__content">
+            <div class="intro__suptitle">lorem ipsum dolor</div>
+            <h1 class="intro__title">Always the <span class="text--blue underline">real</span> thing, always <span class="text--blue">Saas</span></h1>
+            <div class="intro__subtitle">And that number is growing every day. That means <span class="text--white__underline">e-commerce</span> is thriving.</div>
+            
+            <div class="btn__block">
+                <a class="btn btn--long" href="#">Try for free</a>
+                <a class="btn btn--long" href="#">Try for free</a>
+            </div>
+            
+            <div class="intro__text">There are some things money can’t buy. For everything else there’s ‘’<span class="text--white__transparent">MasterCard</span>” is a good example.</div>
+        </div>
+    </div>
+</div><!-- /intro -->
+    
+<!-- Script -->
+<script src="app.js"></script>
+</body>
+    
+</html>
