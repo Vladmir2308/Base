@@ -271,6 +271,117 @@ body{
     opacity: .5;
 }
 
+/* Answer */
+.answer__inner{
+    display: flex;
+    align-items: center;
+}
+
+.answer__content{
+    width: 41%;
+}
+
+.accord{
+    font-size: 1.6em;
+    color: rgba(1, 7, 13, .6);
+}
+
+.accord__item{
+    border-radius: 5px;
+    border: 1px solid rgba(1, 7, 13, .1);
+    
+    padding: 12px 0 12px 20px;
+    margin-top: 15px;
+    
+    position: relative;
+    
+    cursor: pointer;
+}
+
+.accord__item:last-child{
+    margin-bottom: 60px;
+}
+
+.accord__item.active .accord__title::before{
+    background-color: #1D92FF;
+    transform: rotate(-50deg);
+    
+    top: 35px;
+}
+
+.accord__item.active .accord__title::after{
+    background-color: #1D92FF;
+    transform: rotate(50deg);
+    
+    top: 35px;
+}
+
+.accord__item.active .accord__title{
+    font-size: 1.3em;
+    font-family: "P_M";
+    color: #1D92FF;
+}
+
+.accord__item.active .accord__text{
+    display: block;
+    
+    padding: 15px 10px 0 10px;
+}
+
+.accord__title::before{
+    content: "";
+    
+    width: 15px;
+    height: 3px;
+    
+    background-color: #808386;
+    
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    
+    border-radius: 5px;
+    
+    transform-origin: left;
+    transform: rotate(50deg);
+    transition: transform .1s linear;
+}
+
+.accord__title::after{
+    content: "";
+    
+    width: 15px;
+    height: 3px;
+    
+    background-color: #808386;
+    
+    position: absolute;
+    right: 17px;
+    top: 17px;
+    
+    border-radius: 5px;
+    
+    transform-origin: right;
+    transform: rotate(-50deg);
+    transition: transform .1s linear;
+}
+
+.accord__text{
+    display: none;
+}
+
+.answer__img{
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+
+
+
+
+
+
+
 
 /* Titles */
 .suptitle{
@@ -299,6 +410,8 @@ body{
 /* Section */
 .section{
     padding-top: 130px;
+    
+    position: relative;
 }
 
 /* Span */
@@ -363,6 +476,11 @@ body{
     transition: color .4s linear, background .4s linear 
 }
 
+.btn:hover{
+    background-color: #fff;
+    color: #1D92FF;
+}
+
 .btn--long{
     padding: 15px 50px;
     margin-right: 30px;
@@ -372,9 +490,14 @@ body{
     margin-right: 0;
 }
 
-.btn:hover{
-    background-color: #fff;
+.btn__bg--blue{
     color: #1D92FF;
+    border: 1px solid rgba(29, 146, 255, .1);
+}
+
+.btn__bg--blue:hover{
+    background-color: #1D92FF;
+    color: #fff;
 }
 
 
