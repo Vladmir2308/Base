@@ -376,6 +376,185 @@ body{
     right: 0;
 }
 
+/* Testimonials */
+.testi__title{
+    text-align: center;
+}
+
+.testi__inner{
+    margin-top: 50px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    background: url(img/section/testimonials/bg.png) no-repeat;
+}
+
+.testi__item{
+    padding: 0 65px;
+    margin-top: 50px;
+    
+    width: 33.33333%;
+    
+    text-align: center;
+}
+
+.testi__item-title{
+    font-size: 2em;
+    font-family: "P_M";
+    text-transform: capitalize;
+    
+    margin: 25px 0 15px;
+}
+
+.testi__item-text{
+    color: rgba(1, 7, 13, .7);
+    font-size: 1.6em;
+}
+
+/* Prices */
+.prices__title{
+    text-align: center;
+}
+
+.prices__inner{
+    margin-top: 60px;
+    padding: 0 15px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.price__card{
+    width: 33.33333%;
+    
+    text-align: center;
+    
+    border: 1px solid rgba(29, 146, 255, .1);
+    border-radius: 10px;
+    
+    padding: 30px 60px;
+    
+    transition: background .4s linear, color .4s linear;
+    
+    height: 560px;
+}
+
+.price__card.unique{
+    background-color: #002547;
+    color: #fff;
+    
+    height: 600px;
+}
+
+.price__card.unique .card__periods{
+    background-color: rgba(255, 255, 255, .3);
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.price__card.unique .card__duration{
+    color: #fff;
+}
+
+.price__card.unique .card__duration.active{
+    background-color: #1D92FF;
+}
+
+.card__title{
+    font-size: 2em;
+    font-family: "P_M";
+    text-transform: uppercase;
+}
+
+.card__subtitle{
+    font-size: 1.3em;
+    line-height: 160%;
+    
+    opacity: .7;
+    
+    margin-top: 15px;
+}
+
+.card__price{
+    font-size: 3.9em;
+    font-family: "P_M";
+    
+    margin: 20px 0;
+}
+
+.card__periods{
+    border-radius: 18px;
+    border: 0.5px solid rgba(1, 7, 13, .05);
+    
+    margin: 0 auto;
+    
+    background-color: #FAFAFA;
+    
+    width: 222px;
+    
+    display: flex;
+    
+    cursor: pointer;
+    
+    transition: background .4s linear, border .4s linear;
+}
+
+.card__duration{
+    font-size: 1.3em;
+    color: rgba(1, 7, 13, .4);
+    
+    padding: 10px 28px;
+    
+    transition: color .4s linear;
+}
+
+.card__duration.active{
+    background-color: #fff;
+    
+    border-radius: 18px;
+    
+    color: #000;
+    
+    transition: background .4s linear
+}
+
+.card__features{
+    margin: 30px 0;
+}
+
+.card__features-item{
+    text-align: left;
+    
+    position: relative;
+    
+    margin-top: 15px;
+}
+
+.card__features-item:first-child{
+    margin-top: 0;
+}
+
+.card__features-img{
+    display: inline-block;
+    
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+.card__features-text{
+    display: inline-block;
+    
+    width: 210px;
+    
+    opacity: .7;
+    
+    font-size: 1.6em;
+    line-height: 160%;
+    
+    margin-left: 20px;
+}
 
 
 
@@ -473,7 +652,9 @@ body{
     
     border-radius: 5px;
     
-    transition: color .4s linear, background .4s linear 
+    transition: color .4s linear, background .4s linear;
+    
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -500,6 +681,9 @@ body{
     color: #fff;
 }
 
+.btn--card{
+    background-color: #1D92FF;
+}
 
 
 
