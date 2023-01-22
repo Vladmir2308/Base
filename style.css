@@ -556,10 +556,144 @@ body{
     margin-left: 20px;
 }
 
+/* Form */
+.form__block{
+    width: 100%;
+    
+    background: url(img/section/form/bg.png) center no-repeat;
+    background-size: cover;
+   
+    border-radius: 5px;
+    
+    transition: transform .4s linear;
+    
+    padding: 50px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: #fff;
+    
+    transform: translate3d(15px, 15px, 0);
+}
 
+.form__block__bg{  
+    max-width: 1180px;
+    height: 100%;
+    
+    background-color: rgba(29, 146, 255, .05);
+    
+    border-radius: 5px;
+    
+    display: block;
+    
+    margin: 0 auto;
+}
 
+.form__block:hover{
+    transform: translate3d(0, 1px, 0);
+}
 
+.form__content{
+    width: 40%;
+}
 
+.form{
+    width: 40%;
+    
+    position: relative;
+}
+
+.form__title{
+    font-size: 2.2em;
+    font-family: "P_M";
+}
+
+.form__text{
+    opacity: .9;
+    
+    margin-top: 15px;
+    
+    font-size: 1.6em;
+}
+
+.form__input{
+    padding: 17px 83px 17px 40px;
+    
+    border: 1.5px solid rgba(255, 255, 255, .7);
+    border-radius: 50px;
+    
+    background-color: transparent;
+    
+    color: rgba(255, 255, 255, .7);
+    font-size: 1.6em;
+    
+    width: 100%;
+    max-width: 460px;
+}
+
+.form__input::placeholder{
+    color: rgba(255, 255, 255, .7);
+}
+
+/* Footer */
+.footer{
+    background-color: #151b1c;  
+    
+    color: #fff;
+    
+    padding-bottom: 130px;
+}
+
+.footer__inner{
+    padding-top: 130px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo{
+    width: 20%;
+}
+
+.logo__content{
+    font-size: 1.6em;
+    text-transform: capitalize;
+    
+    margin-top: 30px;
+}
+
+.footer__content{
+    display: flex;
+}
+
+.footer__col{
+    margin-right: 80px;
+}
+
+.footer__col:last-child{
+    margin-right: 0;
+}
+
+.col__title{
+    font-size: 16px;
+    font-family: "P_M";
+    
+    margin-bottom: 15px;
+}
+
+.col__link{
+    font-size: 16px;
+    text-transform: capitalize;
+    
+    opacity: .7;
+    
+    margin-top: 10px;
+    
+    
+}
 
 
 /* Titles */
@@ -684,6 +818,25 @@ body{
 .btn--card{
     background-color: #1D92FF;
 }
+
+.btn__form{
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    
+    padding: 12px 20px 8px;
+    
+    border-radius: 50px;
+    cursor: pointer;
+    
+    transform: translateY(-50%);
+    transition: background .4s linear;
+}
+
+.btn__form:hover{
+    background-color: #1D92FF;
+}
+
 
 
 
